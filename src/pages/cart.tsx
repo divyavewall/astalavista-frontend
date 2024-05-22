@@ -46,7 +46,7 @@ const Cart = () => {
                 dispatch(discountApplied(res.data.discount));
                 setIsValidCouponCode(true);
                 dispatch(calculatePrice());
-            }).catch((e) => {
+            }).catch(() => {
                 dispatch(discountApplied(0));
                 setIsValidCouponCode(false);
                 dispatch(calculatePrice());
