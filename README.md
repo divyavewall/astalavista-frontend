@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# AstaLaVista - Ecommerce Website 
+This repository contains the frontend code for the Astalavista e-commerce website, built using the MERN stack, Vite, React, and TypeScript. The application offers a full-featured e-commerce experience with comprehensive user and admin functionalities.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://github.com/divyavewall/astalavista-frontend/assets/132549573/561644f4-e065-46e1-a25b-c137061d51d7
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Features
+- **User Authentication:** Google login implemented with Firebase.
+- **Product Management:** Admin can create , update and delete products
+- **Order Management:** Users can place orders, and admins can manage them.
+- **Search and Filters:** Apply filters to search products within a price range.
+- **Admin Dashboard:** Accessible only by admins to view real-time data on users, products and orders
+- **Charts:** Bar, pie, and line charts for visualizing order fulfilment ratio, product categories, stock availablity, revenue distribution , total number of users , order placed etc
+- **Order Management:** Users can place order and admin can manage them and process the orders
+- **User Roles:** Distinguish between admin and customer roles.
+- **Payment Integration:** Stripe for secure payment processing.
